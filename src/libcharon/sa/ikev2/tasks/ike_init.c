@@ -1007,6 +1007,12 @@ METHOD(task_t, process_i, status_t,
 					break;
 				case COOKIE:
 				{
+					if (this->old_sa)
+					{
+						DBG1(DBG_IKE, "received COOKIE notify during rekeying"
+						     ", ignored");
+						break;
+					}
 					chunk_free(&this->cookie);
 					this->cookie = chunk_clone(notify->get_notification_data(notify));
 					this->ike_sa->reset(this->ike_sa, FALSE);
