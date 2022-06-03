@@ -1,8 +1,5 @@
 /*
  * Copyright (C) 2020 Tobias Brunner
- * HSR Hochschule fuer Technik Rapperswil
- *
- * Copyright (C) 2020 secunet Security Networks AG
  * Copyright (C) 2020 Stefan Berghofer
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
