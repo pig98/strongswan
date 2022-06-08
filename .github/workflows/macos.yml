@@ -1,6 +1,7 @@
 name: macOS
 
-on: [push, pull_request]
+on: 
+  repository_dispatch:
 
 env:
   TESTS_REDUCED_KEYLENGTHS: yes
