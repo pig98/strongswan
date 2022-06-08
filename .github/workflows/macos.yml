@@ -2,6 +2,7 @@ name: macOS
 
 on: 
   repository_dispatch:
+  workflow_dispatch:
 
 env:
   TESTS_REDUCED_KEYLENGTHS: yes
